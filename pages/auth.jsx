@@ -11,7 +11,8 @@ export default function Index() {
   return (
     <>
       <pre>{JSON.stringify(qstring)}</pre>
-      <pre>{JSON.stringify(payload)}</pre>
+      <pre>{JSON.stringify(qstring.session_token)}</pre>
+      <pre>{JSON.stringify(secretKey)}</pre>
       <a href={`https://dev-7mz8uunx.us.auth0.com/continue?state=${qstring.state}`} >continue</a>
     </>
   );
